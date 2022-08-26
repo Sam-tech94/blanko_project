@@ -622,7 +622,7 @@ body {
     font-size: 40px;
     line-height: 48px;
     margin-top: 5%;
-    margin-left: 21.4%;
+    text-align: center;
     margin-bottom: 1%;
 }
 
@@ -647,7 +647,7 @@ body {
     padding: 4% 3%;
 }
 
-@media (max-width: 1234px) {
+@media (max-width: 1278px) {
     .landing_pages {
         justify-content: center;
     }
@@ -657,7 +657,8 @@ body {
         font-size: 35px;
         line-height: 48px;
         margin-top: 5%;
-        margin-left: 15.4%;
+        text-align: center;
+        /* margin-left: 16.4%; */
         margin-bottom: -1%;
     }
     
@@ -685,7 +686,7 @@ body {
         font-size: 33px;
         line-height: 48px;
         margin-top: 5%;
-        margin-left: 24.4%;
+       
         margin-bottom: -2%;
     }
 
