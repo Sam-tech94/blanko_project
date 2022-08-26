@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
 }
 
 
@@ -15,6 +16,7 @@ body {
 .header {
     position: sticky;
     top: 0;
+    z-index: 1000000;
     background: #000;
     height: 81px;
     display: flex;
@@ -314,7 +316,8 @@ body {
 }
 
 @media (max-width: 1024px) {
-    .title {
+
+    /* .title {
         font-weight: 700;
         font-size: 60px;
         line-height: 72px;
@@ -326,7 +329,7 @@ body {
         font-size: 16px;
         line-height: 27px;
         margin-bottom: 20px;
-    }
+    } */
     
     .btn-1 {
         padding: 15px 20px;
@@ -389,7 +392,7 @@ body {
     }
 
     .stars {
-        max-width: 1000px;
+        max-width: 600px;
         margin: 45px 157px;
         text-align: center;
     }
@@ -397,21 +400,18 @@ body {
 
 @media (max-width: 740px) {
     .content {
-        margin: 41px 81px;
+        max-width: 600px;
+        margin: 30px 50px 20px -10px;
+        /* margin-left: -10px; */
     }
 
     .title {
         font-size: 32px;
     }
-
-    .btn-1 {
-        margin-bottom: 5%;
-    }
-
     
 
     .btn-2 {
-        padding: 12px 17px;
+        padding: 7px 17px;
     }
 }
 
@@ -478,12 +478,22 @@ body {
 
 @media (max-width: 1060px) {
     .items {
+        width: 90%;
         flex-wrap: wrap;
     }
 
     .speed {
         display: inline;
         margin-bottom: 7%;
+    }
+
+    .item_1 h5 {
+        font-size: 23px;
+        margin-bottom: 0;
+    }
+
+    .item_1 p {
+        font-size: 15px;
     }
 }
 
@@ -513,6 +523,7 @@ body {
 .text{
     max-width: 576px;
     text-align: center;
+    padding: 0 1%;
 }
 
 .text p {
@@ -551,6 +562,41 @@ body {
     background: rgba(255, 255, 255, 0.4);
 }
 
+@media (max-width: 960px) {
+    .druk {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .girl img {
+        width: 100%;
+    }
+
+    .div_1 img {
+        margin-top: 6.5%;
+        margin-bottom: 3%;
+    }
+
+    .div-top {
+        margin-bottom: 13%;
+    }
+
+    .text p {
+        padding: 0 5%;
+        font-size: 15px;
+    }
+
+    .div_btn {
+        margin-top: -10%;
+    }
+}
+
+@media (max-width: 640px) {
+    .girl img {
+        width: 100%;
+    }
+}
+
 
 
 /* container end */
@@ -559,9 +605,14 @@ body {
 
 /* landing pages start */
 
+.arrow {
+    display: none;
+}
+
 .landing_pages {
     display: flex;
     flex-wrap: wrap;
+    position: relative;
     max-width: 1282px;
     margin: 27px auto ;
 }
@@ -594,6 +645,90 @@ body {
     box-shadow: 0px 8px 8px rgba(16, 19, 80, 0.12);
     border-radius: 6px;
     padding: 4% 3%;
+}
+
+@media (max-width: 1234px) {
+    .landing_pages {
+        justify-content: center;
+    }
+
+    .landing_text {
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 48px;
+        margin-top: 5%;
+        margin-left: 15.4%;
+        margin-bottom: -1%;
+    }
+    
+}
+
+
+@media (max-width: 900px) {
+    .landing_pages {
+        display: block;
+        max-width: 414px;
+        margin: 27px auto;
+    }
+
+    .one, .lending_one{
+        width: 100%;
+    }
+    .one img{
+        width: 80%;
+        display: block;
+        margin: 5px auto;
+    }
+
+    .landing_text {
+        font-weight: 700;
+        font-size: 33px;
+        line-height: 48px;
+        margin-top: 5%;
+        margin-left: 24.4%;
+        margin-bottom: -2%;
+    }
+
+    .arrow {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        /* right: 45%; */
+        /* margin-top: -35px; */
+        /* width: 0;
+        height: 0; */
+        border-style: solid;
+      }
+      
+      #arrow-left {
+        border-width: 30px 40px 30px 0;
+        border-color: transparent rgb(174, 36, 36) transparent transparent;
+        left: -45px;
+      }
+      
+      #arrow-right {
+        border-width: 30px 0 30px 40px;
+        border-color: transparent transparent transparent rgb(147, 38, 38);
+        right: -45px;
+      }
+}
+
+@media (max-width: 450px) {
+    .landing_pages {
+        max-width: 314px;
+    }
+
+    #arrow-left {
+        border-width: 20px 30px 20px 0;
+        left: -35px;
+    }
+
+    #arrow-right {
+        border-width: 20px 0 20px 30px;
+        right: -35px;
+    }
 }
 
 /* landing pages end */
@@ -741,6 +876,45 @@ body {
     color: #FF7143;
 }
 
+@media (max-width: 940px) {
+    .div_form {
+        display: none;
+    }
+
+    .ready h2 {
+        font-size: 40px;
+        margin-bottom: 5%;
+    }
+
+    .ready p {
+        font-size: 15px;
+        padding: 0 7%;
+    }
+
+    .img_stars img {
+        margin-bottom: 5%;
+        margin-top: -3%;
+    }
+
+    .img_stars p {
+        font-size: 16px;
+        padding: 0 3%;
+        margin-bottom: 3%;
+        margin-top: -2%;
+    }
+
+    .btn-1 {
+        padding: 8px 13px;
+        margin-bottom: 5%;
+    }
+
+    .btn-2 {
+        padding: 6px 13px;
+        margin-bottom: 5%;
+        
+    }
+}
+
 
 /* sign up section end */
 
@@ -865,8 +1039,98 @@ hr {
 }
 
 
+@media (max-width: 1141px) {
+    .part_3 {
+        font-size: 13px;
+        width: 70%;
+    }
+
+    .contact a {
+        font-size: 14px;
+        width: 50%;
+    }
+}
+
+@media (max-width: 990px) {
+    .child-1, .child-2 {
+        justify-content: space-evenly;
+    }
+
+    .part_3 {
+        margin-left: 10%;
+    }
+
+   
+}
+
+@media (max-width: 400px) {
+    .part_3 {
+        font-size: 10px;
+    }
+
+    .part_3 img {
+        width: 40px;
+    }
+}
+
+@media (max-width: 789px) {
 
 
+    .btn_get {
+        padding: 5px 16px;
+        font-size: 14px;
+    }
+
+    .blanko_image {
+        margin: 6.1% 54.6% 18.4% 0;
+    }
+
+    .links a {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 638px) {
+
+    .part-2 {
+        justify-content: flex-start;
+    }
+
+    .links {
+        width: 400px;
+        margin-bottom: 9.5%;
+    }
+
+    .btn_get {
+        padding: 8px 11px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 544px) {
+    .part-1{
+        width: 65%;
+    }
+
+    .part_img {
+        width: 50%;
+    }
+
+    .blanko_image {
+        margin: 5.1% 7.6% 13.4% 0%;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+
+    .links a {
+        margin-top: 3%;
+    }
+}
 
 
 
