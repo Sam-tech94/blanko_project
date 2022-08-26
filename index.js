@@ -35,10 +35,16 @@ function reset() {
     }
 }    
 
+function showAll() {
+    for (let i = 0; i < sliderImages.length; i++) {
+        sliderImages[i].style.display = "block";
+    }
+}
+
 //init slider
 function startSlide() {
     reset();
-    sliderImages[0].style.display = "block";
+    sliderImages[current].style.display = "block";
 }
 
 //show prev
@@ -73,16 +79,12 @@ arrowRight.addEventListener("click", () => {
     slideRight();
 });
 
+const sliding = () => window.innerWidth <= 900 ? startSlide() : showAll();
 
-// setInterval(function(){
-//     const styles = window.getComputedStyle(arrowRight);
-//     const display = styles.getPropertyValue('display');
-//     if(display == 'block') {
-//         startSlide()
-//     }
-//     // else{
-//     //     reset()
-//     // }
-// }, 1)
+window.addEventListener('resize', sliding, true); 
+
+sliding()
+
+
 
 
