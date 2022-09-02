@@ -433,7 +433,7 @@ body {
 /* items start */
 
 .items {
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -465,7 +465,8 @@ body {
     margin-bottom: 12px;
 }
 
-.item_1 p {
+.div1_parg{
+    max-width: 250px;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -501,6 +502,7 @@ body {
 
 .container {
     max-width: 1280px;
+    /* max-width: 83%; */
     background: #000000;;
     margin: 83px auto 0;
     display: flex;
@@ -658,7 +660,6 @@ body {
         line-height: 48px;
         margin-top: 5%;
         text-align: center;
-        /* margin-left: 16.4%; */
         margin-bottom: -1%;
     }
     
@@ -696,10 +697,6 @@ body {
         position: absolute;
         top: 50%;
         transform: translate(0, -50%);
-        /* right: 45%; */
-        /* margin-top: -35px; */
-        /* width: 0;
-        height: 0; */
         border-style: solid;
       }
       
@@ -714,6 +711,7 @@ body {
         border-color: transparent transparent transparent rgb(147, 38, 38);
         right: -45px;
       }
+
 }
 
 @media (max-width: 450px) {
@@ -798,15 +796,9 @@ body {
     height: 554px;
     padding: 40px 159px 40px 40px;
     background: #FFFFFF;
-    box-shadow: 0px 24px 24px rgba(0, 0, 0, 0.12);
+    box-shadow: 2px 5px 25px black;
 }
 
-.div_form h2 {
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 40px;
-    margin-bottom: 15%;
-}
 
 .form label {
     font-weight: 400;
@@ -877,9 +869,44 @@ body {
     color: #FF7143;
 }
 
+.close_btn {
+    display: none;
+}
+
 @media (max-width: 940px) {
     .div_form {
         display: none;
+    }
+   
+    .div_form {
+        position: absolute;
+        top: -150%;
+        left: 50%;
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(1.25);
+    }
+
+    .div_form.active {
+        display: block;
+        top: 50%;
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+        transition: top 0ms ease-in-out 200ms,
+                    opacity 200ms ease-in-out 0ms,
+                    transform 200ms ease-in-out 0ms;
+    }
+
+    .close_btn {
+        display: block;
+        position: absolute;
+        right: 12%;
+        width: 15px;
+        height: 15px;
+        background: #888;
+        color: #eee;
+        text-align: center;
+        line-height: 15px;
+        cursor: pointer;
     }
 
     .ready h2 {
@@ -923,8 +950,8 @@ body {
 /* footer start */
 
 .footer_container {
-    max-width: 1280px;
-    margin: 3% auto 3%;
+    max-width: 100%;
+    margin: 3% auto 0;
     background: #120f06;
     padding: 50px;
 }
@@ -1136,3 +1163,5 @@ hr {
 
 
 /* footer end */
+
+

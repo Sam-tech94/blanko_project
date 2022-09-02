@@ -45,14 +45,14 @@
                     <img src="./img/icons/IMAGE.png" alt="">
                 </div>
                 <div class="none">
-                    <a class="nav_a" href="#sign_up">Sign up</a>
+                    <a class="nav_a" id="sign_in_active" href="#active_sign_up">Sign up</a>
                     <img src="./img/icons/IMAGE.png" alt="">
                 </div>
         </div>
 
         <div class="header_block">
             <div class="sign_up">
-                <a href="">Sign up</a>
+                <a href="#sign_up">Sign up</a>
                 <img src="./img/icons/IMAGE.png" alt="">
             </div>
             <div>
@@ -93,6 +93,7 @@
     </div>
 
     <!--section-->
+
     <div class="items">
         <div class="speed">
             <div class="circ">
@@ -101,7 +102,7 @@
             <div class="item_1">
                 <h5>Speed</h5>
                 <div class="div_1">
-                    <p>Open a commercial-grade current account from anywhere</p>
+                    <p class="div1_parg">Open a commercial-grade current account from anywhere</p>
                 </div>
             </div>
         </div>
@@ -113,7 +114,7 @@
             <div class="item_1">
                 <h5>Design</h5>
                 <div class="div_1">
-                    <p>Open a commercial-grade current account from anywhere</p>
+                    <p class="div1_parg">Open a commercial-grade current account from anywhere</p>
                 </div>
             </div>
         </div>
@@ -125,7 +126,7 @@
             <div class="item_1">
                 <h5>Modularity</h5>
                 <div class="div_1">
-                    <p>Open a commercial-grade current account from anywhere</p>
+                    <p class="div1_parg">Open a commercial-grade current account from anywhere</p>
                 </div>
             </div>
         </div>
@@ -203,77 +204,77 @@
     <section id="template">
         <h4 class="landing_text">Other pages</h4>
         <div class="landing_pages">
-            <div class="one">
+            <div class="one slide-1">
                 <img src="./img/other pages/pricing one.png" alt="">
                 <div class="landing_one">
                     <p>Pricing one</p>
                 </div>
             </div>
 
-            <div class="one">
+            <div class="one slide-1">
                 <img src="./img/other pages/pricing two.png" alt="">
                 <div class="landing_one">
                     <p>Pricing two</p>
                 </div>
             </div>
 
-            <div class="one">
+            <div class="one slide-1">
                 <img src="./img/other pages/pricing three.png" alt="">
                 <div class="landing_one">
                     <p>Pricing three</p>
                 </div>
             </div>
 
-            <div class="one">
+            <div class="one slide-1">
                 <img src="./img/other pages/sign up one.png" alt="">
                 <div class="landing_one">
                     <p>Sign up one</p>
                 </div>
             </div>
 
-            <div class="one">
+            <div class="one slide-1">
                 <img src="./img/other pages/sign up two.png" alt="">
                 <div class="landing_one">
                     <p>Sign up two</p>
                 </div>
             </div>
 
-            <div class="one">
+            <div class="one slide-1">
                 <img src="./img/other pages/sign up three.png" alt="">
                 <div class="landing_one">
                     <p>Sign up three</p>
                 </div>
             </div>
 
-            <div class="one">
+            <div class="one slide-1">
                 <img src="./img/other pages/contact one.png" alt="">
                 <div class="landing_one">
                     <p>Contact one</p>
                 </div>
             </div>
 
-            <div class="one">
+            <div class="one slide-1">
                 <img src="./img/other pages/contact two.png" alt="">
                 <div class="landing_one">
                     <p>Contact two</p>
                 </div>
             </div>
 
-            <div class="one">
+            <div class="one slide-1">
                 <img src="./img/other pages/about us.png" alt="">
                 <div class="landing_one">
                     <p>About us</p>
                 </div>
             </div>
 
-            <div class="one">
+            <div class="one slide-1">
                 <img src="./img/other pages/blog.png" alt="">
                 <div class="landing_one">
                     <p>Blog</p>
                 </div>
             </div>
 
-            <div class="one">
+            <div class="one slide-1">
                 <img src="./img/other pages/careers.png" alt="">
                 <div class="landing_one">
                     <p>Careers</p>
@@ -305,7 +306,8 @@
                 </div>
             </div>
 
-            <div class="div_form">
+            <div class="div_form" id="active_sign_up">
+                <div class="close_btn">&times;</div>
                 <h2>Sign up for free</h2>
                 <form class="form">
                     <label for="email">Your email</label>
@@ -319,12 +321,14 @@
                     </div>
 
                     <button>Submit</button>
-                    <p class="account_text">Already have an account? <a href="#" class="link">Sign in</a></p>
+                    <p class="account_text">Already have an account? <a href="/sign_in/sign_in.html" class="link">Sign in</a></p>
                 </form>
+
             </div>
         </div>
     </section>
 </div>
+
 
     <!--Footer-->
     <footer>
