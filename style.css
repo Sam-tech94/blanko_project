@@ -879,7 +879,7 @@ body {
     }
    
     .div_form {
-        position: absolute;
+        position: fixed;
         top: -150%;
         left: 50%;
         opacity: 0;
